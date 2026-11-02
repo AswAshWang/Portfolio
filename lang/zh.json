@@ -1,0 +1,127 @@
+{
+  "common": {
+    "viewProject": "查看项目"
+  },
+  "site": {
+    "name": "王若寒",
+    "tagline": "游戏设计 · 概念美术 · 三维场景"
+  },
+  "home": {
+    "welcomeTitle": "用视觉构建世界，用交互讲述故事。",
+    "welcomeNick": "",
+    "intro1": "我是王若寒，一名专注于游戏视觉设计与互动叙事的创作者。",
+    "intro2": "从概念设计、角色塑造到 3D 场景构建，我希望探索视觉、氛围与游戏机制如何共同塑造玩家的体验，让每一个世界不仅值得观看，更值得亲自走进。"
+  },
+  "nav": {
+    "games": "游戏作品",
+    "art": "美术项目",
+    "about": "关于"
+  },
+  "hub": {
+    "scrollHint": "向下滑动浏览分区",
+    "panels": {
+      "games": {
+        "label": "01 — Games",
+        "title": "游戏作品",
+        "blurb": "可玩体验、叙事与系统设计",
+        "cta": "进入游戏分区"
+      },
+      "art": {
+        "label": "02 — Art",
+        "title": "美术项目",
+        "blurb": "概念设定与 UE5 环境场景",
+        "cta": "进入美术分区"
+      },
+      "about": {
+        "label": "03 — About",
+        "title": "个人介绍",
+        "blurb": "背景、工具与联系方式",
+        "cta": "了解更多"
+      }
+    }
+  },
+  "footer": {
+    "backToHub": "返回主页",
+    "copyright": "© 王若寒. 保留所有权利。"
+  },
+  "games": {
+    "pageTitle": "游戏作品",
+    "intro": "探索叙事、交互与游戏机制的结合，通过可玩的体验构建世界、塑造角色，并传递情感。"
+  },
+  "art": {
+    "pageTitle": "美术项目",
+    "intro": "汇集概念设计、角色创作与三维环境艺术，探索视觉风格、氛围塑造与虚构世界的构建。",
+    "filterAll": "全部",
+    "filterConcept": "概念设计",
+    "filter3d": "三维场景"
+  },
+  "about": {
+    "pageTitle": "关于我",
+    "photoAlt": "王若寒个人照片",
+    "heading": "王若寒 | Ashe (Ruohan) Wang",
+    "role": "游戏视觉设计 · 概念美术 · 3D 环境美术",
+    "bio1": "我是一名专注于游戏视觉设计与互动叙事的创作者，毕业于中国人民大学艺术学院视觉传达设计专业。",
+    "bio2": "我对通过视觉、空间与游戏机制构建沉浸式体验充满热情。我的创作涵盖游戏设计、概念美术与 3D 环境制作，也持续探索角色、场景与叙事如何共同塑造玩家的情感体验。",
+    "bio3": "我希望创造的不仅是具有视觉吸引力的画面，更是拥有独特氛围、内在逻辑与情感深度的游戏世界。",
+    "skillsTitle": "工具与专业方向",
+    "toolsLine": "使用工具： Unity · Unreal Engine 5 · Maya · ZBrush · Substance 3D Painter · Photoshop",
+    "focusLine": "专业方向： 概念设计 · 场景美术 · 游戏设计 · 叙事设计",
+    "contactTitle": "联系我 / Contact",
+    "contactIntro": "如果你对我的作品感兴趣，或希望交流游戏创作、合作项目与相关机会，欢迎通过邮件联系我。",
+    "artStationLabel": "A站：",
+    "emailLabel": "Email",
+    "email": "aswashewang@gmail.com",
+    "resumeLabel": "简历 / Resume",
+    "resumeLink": "下载我的简历（PDF）"
+  },
+  "project": {
+    "overview": "概述",
+    "roleTools": "职责与工具",
+    "gallery": "图集",
+    "backToGames": "返回游戏列表",
+    "backToArt": "返回美术列表",
+    "placeholderGallery": "图片占位",
+    "caseStudyContents": "本页目录"
+  },
+  "projects": {
+    "unseenWitness": {
+      "title": "Unseen Witness",
+      "subtitle": "2D 叙事冒险 · 个人独立项目",
+      "summary": "一款关于理解、陪伴与告别的 2D 像素叙事冒险游戏。"
+    },
+    "siegeNightwings": {
+      "title": "夜翼围城",
+      "subtitle": "概念设计",
+      "summary": "一个被蝠蛛侵染的科幻西部世界。",
+      "overview1": "［占位］项目聚焦攻防对峙下的角色与场景概念，用光影与构图传递紧张感。",
+      "overview2": "［占位］可补充设定关键词、色彩脚本与迭代过程。",
+      "role": "概念设计、氛围与造型（占位）",
+      "tools": "Photoshop · Procreate（占位）"
+    },
+    "dustGod": {
+      "title": "神之尘",
+      "subtitle": "概念设计",
+      "summary": "一个关于被木乃伊感染的哥哥与少女游侠联手寻找失踪妹妹的奇幻冒险故事。",
+      "overview1": "［占位］通过器物、服饰与环境细节构建「神性残留」的视觉语言。",
+      "overview2": "［占位］可补充世界观摘要与主要设计决策。",
+      "role": "概念设计、世界观视觉（占位）",
+      "tools": "Photoshop · 3D 辅助（占位）",
+      "otherSketches": "其他速写"
+    },
+    "penitence": {
+      "title": "忏悔",
+      "titleLong": "The Room of Endless Penitence",
+      "subtitle": "UE5 三维场景",
+      "summary": "一个关于王位争夺与兄弟背叛，以及被囚禁数千年的干尸的黑暗奇幻故事。",
+      "overview1": "［占位］在封闭室内通过尺度、明暗与引导线让玩家/观者经历从压抑到释然的阅读路径。",
+      "overview2": "［占位］可补充 UE5 光照方案、资产来源与性能考量。",
+      "role": "场景搭建、灯光与氛围（占位）",
+      "tools": "Unreal Engine 5 · Quixel（占位）"
+    }
+  },
+  "tags": {
+    "gameDesign": "游戏设计",
+    "concept": "概念设计",
+    "environment": "三维场景"
+  }
+}

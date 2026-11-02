@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Art — Ashe Wang</title>
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-logo" href="../index.html" data-i18n="site.name"></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/games/index.html" data-i18n="nav.games"></a>
+        <a href="/art/index.html" data-i18n="nav.art"></a>
+        <a href="../about.html" data-i18n="nav.about"></a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-set-locale="zh" class="is-active">中文</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-set-locale="en">EN</button>
+      </div>
+    </header>
+
+    <main class="page-main page-main--inner">
+      <a class="back-link" href="../index.html" data-i18n="footer.backToHub"></a>
+      <h1 class="page-title" data-i18n="art.pageTitle"></h1>
+      <p class="page-intro" data-i18n="art.intro"></p>
+
+      <div class="filter-bar" role="group" aria-label="Filter projects">
+        <button type="button" class="is-active" data-filter="all" data-i18n="art.filterAll"></button>
+        <button type="button" data-filter="concept" data-i18n="art.filterConcept"></button>
+        <button type="button" data-filter="environment" data-i18n="art.filter3d"></button>
+      </div>
+
+      <div class="card-grid">
+        <a class="project-card" href="/art/siege-of-the-nightwings.html" data-category="concept">
+          <div class="project-card__media">
+            <img
+              src="../assets/images/cover-siege-nightwings.jpg"
+              alt=""
+              data-i18n-attr="alt:projects.siegeNightwings.title"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag" data-i18n="tags.concept"></span>
+            </div>
+            <h2 data-i18n="projects.siegeNightwings.title"></h2>
+            <p data-i18n="projects.siegeNightwings.summary"></p>
+            <span class="project-card__link" data-i18n="common.viewProject"></span>
+          </div>
+        </a>
+
+        <a class="project-card" href="/art/dust-of-the-god.html" data-category="concept">
+          <div class="project-card__media">
+            <img
+              src="../assets/images/cover-dust-of-the-god.jpg"
+              alt=""
+              data-i18n-attr="alt:projects.dustGod.title"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag" data-i18n="tags.concept"></span>
+            </div>
+            <h2 data-i18n="projects.dustGod.title"></h2>
+            <p data-i18n="projects.dustGod.summary"></p>
+            <span class="project-card__link" data-i18n="common.viewProject"></span>
+          </div>
+        </a>
+
+        <a class="project-card" href="/art/penitence.html" data-category="environment">
+          <div class="project-card__media">
+            <img
+              src="../assets/images/cover-penitence.png"
+              alt=""
+              data-i18n-attr="alt:projects.penitence.title"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag" data-i18n="tags.environment"></span>
+            </div>
+            <h2 data-i18n="projects.penitence.title"></h2>
+            <p data-i18n="projects.penitence.summary"></p>
+            <span class="project-card__link" data-i18n="common.viewProject"></span>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.copyright"></p>
+    </footer>
+
+    <script src="../js/i18n.js" data-base="../"></script>
+    <script src="../js/nav.js"></script>
+  </body>
+</html>

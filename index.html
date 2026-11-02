@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ashe Wang — Portfolio</title>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/hub.css" />
+  </head>
+  <body class="home-page">
+    <header class="site-header site-header--over-hero" id="site-header">
+      <a class="site-logo" href="index.html" data-i18n="site.name"></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="games/index.html" data-i18n="nav.games"></a>
+        <a href="art/index.html" data-i18n="nav.art"></a>
+        <a href="about.html" data-i18n="nav.about"></a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-set-locale="zh" class="is-active">中文</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-set-locale="en">EN</button>
+      </div>
+    </header>
+
+    <main class="home-main">
+      <section class="home-hero" aria-label="Intro">
+        <div class="home-hero__overlay" aria-hidden="true"></div>
+
+        <div class="home-hero__bottom">
+          <div class="home-hero__panel">
+            <div class="home-hero__intro-grid">
+              <div class="home-hero__intro-left">
+                <h1 class="home-hero__title" data-i18n="home.welcomeTitle"></h1>
+                <p class="home-hero__nick" data-i18n="home.welcomeNick"></p>
+              </div>
+              <div class="home-hero__intro-right">
+                <p data-i18n="home.intro1"></p>
+                <p data-i18n="home.intro2"></p>
+              </div>
+            </div>
+          </div>
+
+          <a class="home-hero__scroll" href="#hub-tiles">
+            <span data-i18n="hub.scrollHint"></span>
+            <span class="home-hero__scroll-icon" aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="home-hub" id="hub-tiles" aria-label="Sections">
+        <div class="home-hub__grid">
+          <a class="home-tile home-tile--games" href="games/index.html">
+            <p class="home-tile__label" data-i18n="hub.panels.games.label"></p>
+            <h2 class="home-tile__title" data-i18n="hub.panels.games.title"></h2>
+            <p class="home-tile__blurb" data-i18n="hub.panels.games.blurb"></p>
+            <span class="home-tile__cta" data-i18n="hub.panels.games.cta"></span>
+          </a>
+
+          <a class="home-tile home-tile--art" href="art/index.html">
+            <p class="home-tile__label" data-i18n="hub.panels.art.label"></p>
+            <h2 class="home-tile__title" data-i18n="hub.panels.art.title"></h2>
+            <p class="home-tile__blurb" data-i18n="hub.panels.art.blurb"></p>
+            <span class="home-tile__cta" data-i18n="hub.panels.art.cta"></span>
+          </a>
+
+          <a class="home-tile home-tile--about" href="about.html">
+            <p class="home-tile__label" data-i18n="hub.panels.about.label"></p>
+            <h2 class="home-tile__title" data-i18n="hub.panels.about.title"></h2>
+            <p class="home-tile__blurb" data-i18n="hub.panels.about.blurb"></p>
+            <span class="home-tile__cta" data-i18n="hub.panels.about.cta"></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--home">
+      <p data-i18n="footer.copyright"></p>
+    </footer>
+
+    <script src="js/i18n.js" data-base="./"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,419 @@
+/* Unseen Witness — long-form case study */
+
+.project-detail--case-study {
+  max-width: 68rem;
+}
+
+.hero-banner {
+  position: relative;
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.hero-banner--16x9 {
+  aspect-ratio: 16 / 9;
+}
+
+.hero-banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.case-study-intro {
+  margin: 0 0 var(--space-lg);
+}
+
+.project-detail--case-study .case-study-intro__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 6vw, 3.375rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem;
+  line-height: 1.02;
+}
+
+.case-study-intro__tagline {
+  margin: 0;
+  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.case-section {
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.case-section:last-of-type {
+  border-bottom: none;
+  margin-bottom: var(--space-lg);
+}
+
+.case-section__heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 700;
+  margin: 0 0 var(--space-md);
+  letter-spacing: 0.03em;
+}
+
+.case-chapter__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: var(--space-lg) 0 var(--space-xs);
+}
+
+.case-chapter__lead {
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-sm);
+}
+
+.case-sub__title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin: var(--space-md) 0 var(--space-xs);
+}
+
+.case-mechanic__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: var(--space-lg) 0 0.15rem;
+}
+
+.case-mechanic__where {
+  font-size: 0.82rem;
+  color: var(--color-accent-games);
+  margin: 0 0 var(--space-sm);
+  letter-spacing: 0.03em;
+}
+
+.case-mechanic__lead {
+  font-weight: 400;
+  margin: 0 0 var(--space-sm);
+}
+
+.case-label {
+  font-weight: 700;
+  margin: var(--space-md) 0 var(--space-xs);
+}
+
+.detail-list--meta,
+.detail-list--bullets {
+  margin: var(--space-sm) 0 var(--space-md);
+  padding-left: 1.15rem;
+  line-height: 1.65;
+}
+
+.media-block {
+  margin: var(--space-md) 0 var(--space-lg);
+}
+
+.media-slot {
+  background: var(--color-bg-elevated);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+}
+
+.media-slot--filled {
+  border-style: solid;
+  padding: 0;
+  overflow: hidden;
+  background: #2a3238;
+}
+
+.media-slot--filled img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: zoom-in;
+}
+
+.media-slot--contain img {
+  object-fit: contain;
+}
+
+.media-block--16x9 .media-slot {
+  aspect-ratio: 16 / 9;
+}
+
+/* Game screenshots at native aspect (1684×1056); cover keeps center crop even */
+.media-block--game-native .media-slot {
+  aspect-ratio: 1684 / 1056;
+}
+
+.media-block--game-native .media-slot--filled img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.media-block--wide .media-slot {
+  aspect-ratio: 21 / 9;
+}
+
+.media-block--flowchart .media-slot {
+  aspect-ratio: auto;
+}
+
+.media-block--flowchart .media-slot--filled img {
+  width: 100%;
+  height: auto;
+}
+
+/* Full art (e.g. Bus station) at crop-line bounds — not a cinematic screenshot crop */
+.media-block--art-full .media-slot {
+  aspect-ratio: auto;
+}
+
+.media-block--art-full .media-slot--filled img {
+  width: 100%;
+  height: auto;
+  object-fit: unset;
+}
+
+.media-block--4x3 .media-slot {
+  aspect-ratio: 4 / 3;
+}
+
+.media-row {
+  display: grid;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0 var(--space-lg);
+}
+
+.media-row--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.media-row--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.media-row-item--span {
+  grid-column: 1 / -1;
+}
+
+.media-stack {
+  margin: var(--space-md) 0 var(--space-lg);
+}
+
+.media-stack .media-row {
+  margin: 0;
+}
+
+.media-stack .media-row + .media-row {
+  margin-top: var(--space-sm);
+  align-items: stretch;
+}
+
+/* Match row-to-row gap with gap before the next full-width figure */
+.media-stack--uniform-gap .media-row + .media-row {
+  margin-top: var(--space-lg);
+}
+
+.media-stack--uniform-gap + .media-block {
+  margin-top: 0;
+}
+
+.media-row-item--text {
+  display: flex;
+  align-items: center;
+  min-height: 0;
+  height: 100%;
+}
+
+.media-row-item--text p {
+  margin: 0;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+@media (max-width: 720px) {
+  .media-row--3,
+  .media-row--2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.media-row .media-slot {
+  aspect-ratio: 16 / 10;
+}
+
+.media-slot--real-photo {
+  aspect-ratio: 4 / 3;
+  min-height: 10rem;
+}
+
+.media-slot--real-photo.media-slot--filled img {
+  object-fit: contain;
+  background: #2a3238;
+}
+
+.media-block figcaption,
+.media-row-item figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+.media-figcaption--prose {
+  max-width: none;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+.media-slot--diagram {
+  min-height: 12rem;
+  padding: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.case-table-wrap {
+  overflow-x: auto;
+  margin: var(--space-md) 0;
+}
+
+.case-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.case-table th,
+.case-table td {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.case-table th {
+  background: var(--color-bg-elevated);
+  font-weight: 600;
+}
+
+.project-detail--case-study .detail-section p,
+.project-detail--case-study .case-section p {
+  max-width: none;
+  line-height: 1.65;
+  white-space: pre-line;
+  font-weight: 400;
+  font-size: 0.92rem;
+}
+
+.project-detail--case-study .case-section li {
+  font-weight: 400;
+  font-size: 0.92rem;
+}
+
+.case-section > p,
+.case-section > ul,
+.case-chapter > p {
+  max-width: 46rem;
+}
+
+.project-toc {
+  max-width: none;
+}
+
+.monster-roster {
+  margin: var(--space-md) 0 var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-elevated);
+  overflow: hidden;
+}
+
+.monster-roster__item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.monster-roster__item:last-child {
+  border-bottom: none;
+}
+
+.monster-roster__row {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: var(--space-md);
+  align-items: center;
+  padding: var(--space-md);
+}
+
+.monster-roster__thumb {
+  width: 5.5rem;
+  height: 5.5rem;
+  aspect-ratio: 1;
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.monster-roster__thumb img {
+  object-fit: cover;
+}
+
+.monster-roster__name {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.monster-roster__tag {
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.monster-roster__body {
+  --monster-roster-inset: calc(var(--space-md) + 5.5rem + var(--space-md));
+  padding: 0 var(--monster-roster-inset) var(--space-md);
+  max-width: none;
+}
+
+.monster-roster__body p {
+  margin: 0 0 var(--space-sm);
+}
+
+.monster-roster__body p:last-child:empty {
+  display: none;
+}
+
+.case-dev-log {
+  margin: var(--space-lg) 0 0;
+  max-width: 46rem;
+}
+
+.case-dev-log__link {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.case-dev-log__link:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,127 @@
+{
+  "common": {
+    "viewProject": "View project"
+  },
+  "site": {
+    "name": "Ashe Wang",
+    "tagline": "Game Design · Concept Art · 3D Environments"
+  },
+  "home": {
+    "welcomeTitle": "Build worlds with vision; tell stories through interaction.",
+    "welcomeNick": "",
+    "intro1": "I'm Ashe (Ruohan) Wang, a creator focused on game visual design and interactive storytelling.",
+    "intro2": "From concept design and character development to 3D environment building, I explore how visuals, atmosphere, and game mechanics shape the player experience—worlds worth not only watching, but stepping into."
+  },
+  "nav": {
+    "games": "Games",
+    "art": "Art",
+    "about": "About"
+  },
+  "hub": {
+    "scrollHint": "Scroll down to explore",
+    "panels": {
+      "games": {
+        "label": "01 — Games",
+        "title": "Game Works",
+        "blurb": "Playable experiences, narrative & systems",
+        "cta": "Enter games"
+      },
+      "art": {
+        "label": "02 — Art",
+        "title": "Art Projects",
+        "blurb": "Concept art & UE5 environments",
+        "cta": "Enter art"
+      },
+      "about": {
+        "label": "03 — About",
+        "title": "About Me",
+        "blurb": "Background, tools & contact",
+        "cta": "Learn more"
+      }
+    }
+  },
+  "footer": {
+    "backToHub": "Back to hub",
+    "copyright": "© Ashe Wang. All rights reserved."
+  },
+  "games": {
+    "pageTitle": "Game Works",
+    "intro": "Exploring the intersection of narrative, interaction, and game mechanics to build worlds, shape characters, and evoke emotions through play."
+  },
+  "art": {
+    "pageTitle": "Art Projects",
+    "intro": "A collection of concept art, character design, and 3D environment art, exploring visual styles, atmospheric storytelling, and worldbuilding.",
+    "filterAll": "All",
+    "filterConcept": "Concept",
+    "filter3d": "3D Environment"
+  },
+  "about": {
+    "pageTitle": "About Me",
+    "photoAlt": "Photo of Ashe Wang",
+    "heading": "Ashe (Ruohan) Wang",
+    "role": "Game Visual Design · Concept Art · 3D Environment Art",
+    "bio1": "I am a visual creator focused on game design and interactive storytelling, with a background in Visual Communication Design from the School of Arts at Renmin University of China.",
+    "bio2": "I am passionate about building immersive experiences through visual design, spatial storytelling, and game mechanics. My work spans game design, concept art, and 3D environment art, while I continue to explore how characters, environments, and narrative can shape the player's emotional experience.",
+    "bio3": "Beyond creating visually compelling imagery, I aspire to build distinctive game worlds with a strong sense of atmosphere, internal logic, and emotional depth.",
+    "skillsTitle": "Tools & Areas of Focus",
+    "toolsLine": "Tools: Unity · Unreal Engine 5 · Maya · ZBrush · Substance 3D Painter · Photoshop",
+    "focusLine": "Areas of Focus: Concept Art · Environment Art · Game Design · Narrative Design",
+    "contactTitle": "Contact",
+    "contactIntro": "For inquiries about my work, creative collaborations, or professional opportunities, feel free to reach out.",
+    "artStationLabel": "Artstation：",
+    "emailLabel": "Email",
+    "email": "aswashewang@gmail.com",
+    "resumeLabel": "Resume",
+    "resumeLink": "Download my Resume (PDF)"
+  },
+  "project": {
+    "overview": "Overview",
+    "roleTools": "Role & tools",
+    "gallery": "Gallery",
+    "backToGames": "Back to games",
+    "backToArt": "Back to art",
+    "placeholderGallery": "Image placeholder",
+    "caseStudyContents": "On this page"
+  },
+  "projects": {
+    "unseenWitness": {
+      "title": "Unseen Witness",
+      "subtitle": "2D Narrative Adventure · Solo Indie Project",
+      "summary": "A 2D pixel-art narrative adventure about understanding, companionship, and farewell."
+    },
+    "siegeNightwings": {
+      "title": "Siege of the Nightwings",
+      "subtitle": "Concept Art",
+      "summary": "A sci-fi Western world infested by Bat-Spiders.",
+      "overview1": "[Placeholder] Character and environment concepts under siege tension, using light and composition.",
+      "overview2": "[Placeholder] Add keywords, color script, and iteration notes.",
+      "role": "Concept art, mood & form (placeholder)",
+      "tools": "Photoshop · Procreate (placeholder)"
+    },
+    "dustGod": {
+      "title": "Dust of the God",
+      "subtitle": "Concept Art",
+      "summary": "A fantasy adventure about a mummy-infected brother and a young huntress joining forces to find his missing sister.",
+      "overview1": "[Placeholder] Props, costume, and environment details build a visual language of lingering divinity.",
+      "overview2": "[Placeholder] Add world summary and key design decisions.",
+      "role": "Concept art, visual worldbuilding (placeholder)",
+      "tools": "Photoshop · 3D support (placeholder)",
+      "otherSketches": "Other Sketches"
+    },
+    "penitence": {
+      "title": "Penitence",
+      "titleLong": "The Room of Endless Penitence",
+      "subtitle": "UE5 Environment",
+      "summary": "A dark fantasy tale of royal rivalry, fraternal betrayal, and a mummified corpse imprisoned for millennia.",
+      "overview1": "[Placeholder] A confined interior uses scale, contrast, and leading lines for a path from oppression toward release.",
+      "overview2": "[Placeholder] Add UE5 lighting setup, asset sources, and performance notes.",
+      "role": "Scene assembly, lighting & mood (placeholder)",
+      "tools": "Unreal Engine 5 · Quixel (placeholder)"
+    }
+  },
+  "tags": {
+    "gameDesign": "Game Design",
+    "concept": "Concept Art",
+    "environment": "3D Environment"
+  }
+}

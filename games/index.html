@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Games — Ashe Wang</title>
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-logo" href="../index.html" data-i18n="site.name"></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/games/index.html" data-i18n="nav.games"></a>
+        <a href="../art/index.html" data-i18n="nav.art"></a>
+        <a href="../about.html" data-i18n="nav.about"></a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-set-locale="zh" class="is-active">中文</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-set-locale="en">EN</button>
+      </div>
+    </header>
+
+    <main class="page-main page-main--inner page-main--games">
+      <a class="back-link" href="../index.html" data-i18n="footer.backToHub"></a>
+      <h1 class="page-title" data-i18n="games.pageTitle"></h1>
+      <p class="page-intro" data-i18n="games.intro"></p>
+
+      <div class="card-grid">
+        <a class="project-card" href="/games/unseen-witness.html">
+          <div class="project-card__media">
+            <img
+              src="../assets/images/unseen-witness-cover.png"
+              alt=""
+              data-i18n-attr="alt:projects.unseenWitness.title"
+            />
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag" data-i18n="tags.gameDesign"></span>
+            </div>
+            <h2 data-i18n="projects.unseenWitness.title"></h2>
+            <p data-i18n="projects.unseenWitness.summary"></p>
+            <span class="project-card__link" data-i18n="common.viewProject"></span>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.copyright"></p>
+    </footer>
+
+    <script src="../js/i18n.js" data-base="../"></script>
+    <script src="../js/nav.js"></script>
+  </body>
+</html>
