@@ -1,6 +1,6 @@
 (function () {
   const STORAGE_KEY = "portfolio-locale";
-  const DEFAULT_LOCALE = "zh";
+  const DEFAULT_LOCALE = "en";
 
   function getBasePath() {
     const script = document.querySelector('script[src*="i18n.js"]');

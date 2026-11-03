@@ -12,15 +12,11 @@
   border: 1px solid var(--color-border);
 }
 
-.hero-banner--16x9 {
-  aspect-ratio: 16 / 9;
-}
-
-.hero-banner__img {
+.hero-banner--native .hero-banner__img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
+  vertical-align: bottom;
 }
 
 .case-study-intro {
@@ -335,6 +331,64 @@
 
 .project-toc {
   max-width: none;
+}
+
+.case-study-video {
+  margin: 0 0 var(--space-sm);
+  max-width: none;
+  width: 100%;
+}
+
+.case-study-video__actions {
+  margin: 0 0 var(--space-lg);
+  max-width: none;
+  width: 100%;
+}
+
+.case-study-pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem 0.45rem 0.75rem;
+  border: 1px solid rgba(44, 53, 69, 0.35);
+  border-radius: 9999px;
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.case-study-pill-link--youtube::before {
+  content: "";
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.05rem;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 20'%3E%3Crect width='28' height='20' rx='5' fill='%23FF0000'/%3E%3Cpath fill='%23FFF' d='M11 5.2v9.6l8.2-4.8L11 5.2z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+.case-study-pill-link:hover {
+  background: #ebe8e2;
+  border-color: rgba(44, 53, 69, 0.5);
+}
+
+.case-study-pill-link:focus-visible {
+  outline: 2px solid var(--color-accent-games);
+  outline-offset: 2px;
+}
+
+.case-study-video__player {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  background: #000;
+  vertical-align: top;
 }
 
 .monster-roster {

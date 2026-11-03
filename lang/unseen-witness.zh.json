@@ -7,6 +7,10 @@
         "title": "未曾看见",
         "tagline": "2D 像素叙事冒险游戏 / 个人独立项目"
       },
+      "video": {
+        "fullVersionLink": "观看完整版",
+        "fullVersionAria": "观看完整版，在 YouTube 打开"
+      },
       "toc": {
         "s01": "01 / 项目概览",
         "s02": "02 / 设计动机",

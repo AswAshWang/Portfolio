@@ -7,6 +7,10 @@
         "title": "UNSEEN WITNESS",
         "tagline": "2D Narrative Adventure Game / Solo Indie Project"
       },
+      "video": {
+        "fullVersionLink": "Watch full version",
+        "fullVersionAria": "Watch full version on YouTube"
+      },
       "toc": {
         "s01": "01 / PROJECT OVERVIEW",
         "s02": "02 / DESIGN MOTIVATION",

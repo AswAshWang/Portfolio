@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,16 +17,16 @@
         <a href="../about.html" data-i18n="nav.about"></a>
       </nav>
       <div class="lang-switch" role="group" aria-label="Language">
-        <button type="button" data-set-locale="zh" class="is-active">中文</button>
+        <button type="button" data-set-locale="zh">中文</button>
         <span aria-hidden="true">/</span>
-        <button type="button" data-set-locale="en">EN</button>
+        <button type="button" data-set-locale="en" class="is-active">EN</button>
       </div>
     </header>
 
     <main class="page-main page-main--inner project-detail project-detail--case-study">
       <a class="back-link" href="/games/index.html" data-i18n="project.backToGames"></a>
 
-      <header class="hero-banner hero-banner--16x9">
+      <header class="hero-banner hero-banner--native">
         <img
           class="hero-banner__img"
           src="../assets/images/bus-station.png"
@@ -54,6 +54,29 @@
           <li><a href="#s09" data-i18n="projects.unseenWitness.toc.s09"></a></li>
         </ul>
       </nav>
+
+      <figure class="case-study-video">
+        <video
+          class="case-study-video__player"
+          controls
+          playsinline
+          preload="metadata"
+          src="../assets/video/unseen-witness-edited.mp4"
+        >
+          Your browser does not support the video tag.
+        </video>
+      </figure>
+
+      <p class="case-study-video__actions">
+        <a
+          class="case-study-pill-link case-study-pill-link--youtube"
+          href="https://youtu.be/hAJL2xCGPEk"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-i18n="projects.unseenWitness.video.fullVersionLink"
+          data-i18n-attr="aria-label:projects.unseenWitness.video.fullVersionAria"
+        ></a>
+      </p>
 
       <!-- 01 Overview -->
       <section id="s01" class="case-section">
