@@ -1,11 +1,11 @@
 (function () {
   const roots = document.querySelectorAll(
-    ".project-detail--case-study, .project-detail--art-board"
+    ".project-detail--case-study, .project-detail--art-board, .page-main--other"
   );
   if (!roots.length) return;
 
   const clickableImgSelector =
-    ".media-block img, .media-row-item img, .media-row img, .monster-roster img, .art-board-stack img";
+    ".media-block img, .media-row-item img, .media-row img, .monster-roster img, .art-board-stack img, .other-work__gallery img";
 
   const MIN_ZOOM = 1;
   const MAX_ZOOM = 4;

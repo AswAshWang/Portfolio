@@ -9,18 +9,19 @@
       },
       "video": {
         "fullVersionLink": "Watch the Full Playthrough",
-        "fullVersionAria": "Watch the full playthrough on YouTube"
+        "fullVersionAria": "Watch the full playthrough on YouTube",
+        "playDemoLink": "Play on itch.io",
+        "playDemoAria": "Open the Unseen Witness browser demo on itch.io"
       },
       "toc": {
         "s01": "01 / PROJECT OVERVIEW",
         "s02": "02 / DESIGN MOTIVATION",
         "s03": "03 / NARRATIVE DESIGN",
         "s04": "04 / CORE GAMEPLAY MECHANICS",
-        "s05": "05 / DESIGN DEEP DIVE: CHAPTER 3'S DAILY SCHEDULE AND COMPANION SYSTEM",
-        "s06": "06 / VISUAL AND UI DESIGN",
-        "s07": "07 / TECHNICAL IMPLEMENTATION",
-        "s08": "08 / REFLECTION",
-        "s09": "09 / BEYOND THE GAME"
+        "s06": "05 / SPRITE DESIGN",
+        "s07": "06 / TECHNICAL IMPLEMENTATION",
+        "s08": "07 / REFLECTION",
+        "s09": "08 / BEYOND THE GAME"
       },
       "s01": {
         "heading": "01 / PROJECT OVERVIEW",
@@ -36,11 +37,9 @@
       "s02": {
         "heading": "02 / DESIGN MOTIVATION",
         "p1": "Unseen Witness is rooted in my real-life experience with a close friend. Ashe is based on me, while Power is inspired by my friend. Our relationship has involved everyday conflicts, misunderstandings, and emotions that were often difficult to express.",
-        "p2": "I have never witnessed the hallucinations Power described—shadow figures, pale figures, and spectral faces. I could only learn about her perceptual experiences through her words, trying to understand a world beyond my own perception. This made me realize that even people who are close to each other may experience reality differently. For people living with mental illness, the distress they experience can be deeply real and overwhelming, yet remain invisible to those around them. We can listen, care, and offer companionship, but that does not necessarily mean we truly understand what they are going through.",
-        "p3": "Today, I am preparing to pursue graduate studies overseas, while she remains in China, receiving regular treatment and beginning her professional life. We are still close friends and stay in touch every day. Rather than recreating our experiences literally, I wanted to reinterpret the emotions, misunderstandings, and relationships within them through game design, while creating an opportunity for more people to approach experiences that are often difficult to understand.",
-        "p4": "When misunderstandings arise between close friends, can listening, communication, and shared experiences help them understand each other and bridge the distance between them?",
-        "p5": "This question became the foundation of the game's design. Players explore overlooked clues, enter Power's world of perception, accompany her through everyday life, and reflect on the impact of their own actions. I wanted players to discover not only what a character is going through, but also the feelings left unspoken and the things they have yet to understand through their own observations, actions, and choices.",
-        "p6": "For me, Unseen Witness is more than a story about friendship; it is also an exploration of interactive storytelling. Through gameplay, I hope to bring players closer to the inner experiences of people living with mental illness, while encouraging them to reconsider how they understand and support those whose worlds may differ from their own."
+        "p2": "I have never seen the hallucinations Power described—the shadow figures, pale figures, and spectral faces. I could only listen to her and try to imagine them. Even when two people are close, they may not see the same world. Her pain was real, yet invisible to me; I could listen, care, and stay with her, but that did not mean I truly understood what she was going through.",
+        "p3": "Today, I am preparing to pursue graduate studies in games overseas, while she remains in China, receiving regular treatment and beginning her professional life. We are still close and stay in touch every day. The game does not recreate our experiences literally; I wanted to use it to revisit the misunderstandings and emotions between us. Starting from Power's experiences, I also hope to bring more people closer to the inner lives of people living with mental illness, especially those who are supporting a friend or family member but are unsure how to understand what they are going through.",
+        "p4": "In the game, I translate this distance—the inability to fully see another person's world—into concrete interactions. Players explore overlooked clues, enter Power's world of perception, accompany her through everyday life, and confront the impact of their own choices. The game never simply tells players what Power is experiencing; the feelings left unspoken are discovered gradually through their own choices."
       },
       "s03": {
         "heading": "03 / NARRATIVE DESIGN",
@@ -48,13 +47,13 @@
           "title": "Chapter 01 — Waiting and Misunderstanding",
           "lead": "Making the Passage of Time Tangible",
           "p1": "The story begins with an everyday misunderstanding. Power tells Ashe that she is going to the restroom but does not return for a long time. As the wait continues, Ashe gradually loses patience and eventually leaves on her own, unaware that Power has been feeling physically unwell.",
-          "p2": "Through interactive classroom objects, classmates gradually leaving, changing lighting, and the darkening sky, players experience the passage of time firsthand. When a similar situation occurs again, Power tells Ashe that she is unwell, and Ashe begins to actively look for and care about her.\n\nBy making time and the surrounding environment change, this chapter guides players from initial frustration toward a reconsideration of Power's situation."
+          "p2": "Through interactive classroom objects, classmates gradually leaving, changing lighting, and the darkening sky, players experience the passage of time firsthand. When a similar situation occurs again, Power tells Ashe that she is unwell, and Ashe begins to actively look for and care about her.\n\nThroughout this chapter, changes in the environment and the passage of time convey Ashe and Power's gradual shift from misunderstanding toward beginning to understand each other."
         },
         "c2": {
           "title": "Chapter 02 — Entering Power's World of Perception",
           "lead": "Turning Invisible Feelings into an Explorable Space",
           "p1": "Ashe enters a distorted labyrinth built around a familiar restroom environment. Everyday objects lose their original order, while the structure and proportions of the space become increasingly illogical. Players must explore the labyrinth, avoid monsters, and search for clues to gradually approach Power's inner world.",
-          "p2": "The visual designs are based on Power's personal descriptions of her experiences. They are not intended as literal reproductions of real symptoms, but rather as artistic interpretations that translate her descriptions of fear, feeling watched, and conflicting emotions into explorable environments and characters.",
+          "p2": "The monsters and environments are based on Power's descriptions, rather than recreations of real symptoms.",
           "black": {
             "name": "Shadow Figures",
             "tag": "Shadow figures · persistent threat and fear",
@@ -67,7 +66,7 @@
             "tag": "Pale figures · contradictory guides",
             "title": "Pale Figures — The Conflict Between Defense and the Desire to Be Understood",
             "p1": "Unlike the shadow figures, the pale figures Power described usually remained still and did not directly provoke fear. I designed them as ambiguous guides: they sometimes block Ashe's path, yet also leave clues that encourage her to move forward.",
-            "p2": "Their contradictory behavior represents Power's tendency to withdraw from and defend herself against the outside world, while still holding a desire to be understood by someone close to her."
+            "p2": "I further developed this character as a visual embodiment of Power’s avoidance and defense against the outside world, while also reflecting her deep desire to be understood by her friends."
           },
           "ghost": {
             "name": "Spectral Faces",
@@ -82,67 +81,74 @@
             "p2": "The enormous distorted figure of Ashe is also part of this environmental distortion. Power once described how, even when Ashe did not intend to criticize her, she sometimes experienced Ashe's words as an attack. I translated this into an imposing, oversized figure, prompting Ashe to reflect on her impatient temperament and how her seemingly casual words might affect Power."
           },
           "end": {
-            "p1": "At the end of the labyrinth, the pale figures begin questioning Ashe. Their questions shift the player's attention from what Power has experienced to how Ashe has treated her, and whether her own behavior may have deepened their misunderstandings.",
-            "p2": "Understanding another person also requires examining ourselves."
+            "p1": "At the end of the maze, the Pale Figures begin asking Ashe a series of questions, shifting the player's attention from what Power has experienced to how Ashe has treated her, and whether her actions have deepened the misunderstanding between them. After completing the trial, the sealed door opens, allowing Ashe to enter and finally find Power."
           }
         },
         "c3": {
           "title": "Chapter 03 — Companionship in Everyday Life",
           "lead": "Turning Understanding into Everyday Actions",
           "p1": "After leaving the labyrinth, Ashe begins accompanying Power through everyday campus life. Players help them eat together, complete daily tasks, remember medication, and respond when Power feels unwell.",
-          "p2": "This chapter unfolds over three consecutive days on campus. As time passes, Power's condition gradually worsens, making everyday tasks increasingly difficult. Ashe must respond to more and more needs, yet begins to realize that she cannot control how things unfold.",
-          "p3": "Ashe cannot cure Power, but she can choose to stay by her side."
+          "p2": "This chapter unfolds over three consecutive days on campus. As time passes, Power's condition gradually worsens, making everyday tasks increasingly difficult. Ashe must respond to more and more needs, yet begins to realize that she cannot control how things unfold."
         },
         "c4": {
           "title": "Chapter 04 — Gifts & Farewell",
           "lead": "Memories that cannot be taken along",
           "p1": "Due to the uncertainty surrounding her treatment and future, Power ultimately cannot accompany Ashe abroad. Before they part ways, she invites Ashe to choose a few gifts from her room to take along.",
           "p3": "The selected gifts remain on the main menu after the story ends. They become tangible traces of the time the two spent together, allowing the player's choices to carry on beyond the game itself.",
-          "p2": "The bus stop scene appears at both the beginning and the end of the game, creating a visual parallel. At the beginning, Ashe and Power stand side by side at the bus stop. By the end, Ashe is left standing alone. The recurring setting highlights the changes in their circumstances and relationship, while Power's absence becomes a quiet yet powerful expression of loss."
+          "p2": "The bus stop scene appears at both the beginning and the end of the game, creating a visual parallel. At the beginning, Ashe and Power stand side by side at the bus stop. By the end, Ashe is left standing alone. The recurring setting highlights the changes in their circumstances and relationship."
         }
       },
       "s04": {
         "heading": "04 / CORE GAMEPLAY MECHANICS",
+        "m0": {
+          "title": "Chapter 01 — Time Progression & Environmental Interaction",
+          "p1": "Players progress through time by interacting with classmates and objects:",
+          "flow": "Talk to a classmate → Classmate leaves → Light fades → New dialogue unlocks → Receive Power's message",
+          "p2": "The first day requires several interactions to progress, while the second day is simplified to a single conversation before Power's message appears.",
+          "p3": "Players can also freely examine objects around the classroom to learn more about the class and its everyday environment.",
+          "waterTitle": "Watering Interaction",
+          "waterP": "Ashe can pick up the watering can and water the plants in the classroom."
+        },
         "m1": {
           "title": "Chapter 02 — Exploration, Clue Collection & Hallucination Encounters",
           "lead": "Understand Power's world through exploration and encounters with her hallucinations.",
           "p1": "Players navigate a surreal bathroom labyrinth, observing their surroundings, searching for key objects, and solving puzzles. Environmental anomalies, monster behaviors, and clues left by the Pale Figures gradually reveal more about Power's experiences and emotions.",
-          "p2": "In this chapter, Ashe has 100 points of Will. Coming into contact with different hallucinations reduces her Will by different amounts:",
-          "b1": "Shadow Figures: Contact reduces Will by 10 points.",
-          "b2": "Spectral Faces: Contact reduces Will by 20 points.",
-          "p3": "Players can right-click to release Will, a burst of determination that breaks through the hallucinations in front of Ashe. Three consecutive uses of Will can eliminate Shadow Figures, while Spectral Faces cannot be attacked and must be avoided.",
-          "p4": "These mechanics turn the fear and pressure Power experiences into tangible gameplay challenges, requiring players to assess risks and adapt their strategies while exploring.",
-          "p5": "Rather than passively receiving background information, players piece together Power's subjective world through observation, experimentation, deduction, and encounters with the hallucinations.",
+          "p2": "In this chapter, Ashe has 100 points of energy. Coming into contact with different hallucinations reduces her energy by different amounts:",
+          "b1": "Shadow Figures: Contact reduces energy by 10 points.",
+          "b2": "Spectral Faces: Contact reduces energy by 20 points.",
+          "p3": "Players can right-click to release Will (unwavering determination) to break through the hallucinations in front of Ashe. Three consecutive uses of Will can eliminate Shadow Figures, while Spectral Faces cannot be attacked and must be avoided.",
+          "p4": "When Ashe's energy reaches zero, the screen fades out and the maze resets to the starting room, restoring her energy to full. Players must continue from the beginning, while previously solved puzzles remain unlocked.",
           "design": {
             "heading": "Exploring and Refining the Maze Design",
             "initialLabel": "01 — Initial Concept: Top-down Maze Map",
-            "initialP": "Initially, I planned to create a single, complete top-down maze map, where players would navigate in four directions to find the correct exit within a fixed layout. However, this approach felt too similar to a conventional maze game. The exploration quickly became repetitive, and it was difficult to convey the disorienting, oppressive, and eerie atmosphere I envisioned.",
+            "initialP": "Initially, I planned to create a single, complete top-down maze map, where players would navigate in four directions to find the correct exit within a fixed layout. However, this approach felt too similar to a conventional maze game. The exploration quickly became repetitive, and it was difficult to convey the oppressive and eerie atmosphere I envisioned.",
             "finalLabel": "02 — Final Direction: Endless Corridors and Sequential Exploration",
             "finalP": "I eventually shifted to a maze built around interconnected corridors and rooms. Players must continually open doors and enter unfamiliar spaces, searching for a way forward through environments that appear familiar yet subtly distorted. By obscuring clear spatial boundaries and limiting players' ability to anticipate what lies beyond each door, this approach creates a stronger sense of disorientation, uncertainty, and psychological tension."
           }
         },
         "m2": {
           "title": "Chapter 03 — Companion System & Stamina Management",
-          "lead": "Make companionship an ongoing action.",
-          "p1": "Power's stamina reflects her ability to move and her current condition in the game. During campus activities, players must keep track of her position and stamina, adjusting their movements according to the distance between the two characters.",
+          "lead": "Making Companionship an Ongoing Action",
+          "rulesHeading": "Stamina Rules",
+          "p1": "Power's stamina reflects her ability to move and her current condition. During campus activities, players must pay attention to her position and stamina, adjusting their movements according to the distance between the two characters.",
           "b1": "Moving Together: Power continuously loses stamina while following Ashe.",
           "b2": "Waiting: When Power stays still and Ashe is nearby, her stamina no longer decreases.",
           "b3": "Distance: The farther Ashe moves away from Power, the faster her stamina drains.",
           "b4": "State Feedback: When Power's stamina reaches zero, she experiences hallucinations and the current task fails. Players must restart the task.",
-          "b5": "Condition Progression: Power's stamina drains progressively faster from Chapter 1 to Chapter 3, reflecting the worsening of her condition.",
-          "p2": "This system serves both gameplay and narrative purposes. On a gameplay level, players must manage the distance between the two characters and adjust their pace. On a narrative level, they must actively look after Power rather than completing everything on their own.",
-          "p3": "Staying close and waiting for Power allow her to continue participating in everyday life, but they cannot prevent her condition from worsening. Companionship is not a cure, but an ongoing choice to stay by someone's side."
+          "b5": "Condition Progression: Power's stamina drains progressively faster from Day 1 to Day 3, reflecting the continued worsening of her condition.",
+          "p2": "At first, the player's actions make a tangible difference. But as Power's condition continues to worsen, even Ashe's constant presence cannot prevent her eventual collapse.",
+          "p3": "Staying close and waiting for Power can help her continue participating in everyday life, but it cannot stop her condition from worsening. What I want to express is that companionship does not mean healing. When we cannot change the outcome, we can still choose to stay by someone's side. It may not erase the pain, but it can bring care and hope, offering comfort for wounds that cannot be changed."
         },
         "m3": {
           "title": "Chapter 04 — Free Gift Selection & State Persistence",
-          "lead": "Turning player choices into a visible gameplay experience.",
-          "p1": "Players can freely choose which gifts to take from Power's room, with no minimum requirement and a maximum of 19 items. The selection includes a variety of objects, ranging from ordinary items such as plush toys to unexpected and humorous choices like dog food, a moldy orange, or even a complete set of knight's armor.",
-          "p3": "By combining diverse item selections, character interactions, and personalized visual outcomes, this mechanic adds a layer of playful discovery while offering a lighthearted contrast to the game's otherwise somber tone."
+          "lead": "Making the player's choices visible through the game experience.",
+          "p1": "Players can freely choose which gifts to take from Power's room, with up to 19 items available. The gifts serve different purposes: some carry narrative meaning, such as the small watermelon from Power's bed, which gives players a glimpse into her fondness for it; others are included simply for fun, such as a moldy orange, a takeout container, and even a full suit of knight's armor.",
+          "p3": "After making their selections, players take the gifts with them to the bus stop, where the scene gradually transforms into the game's main menu. When the game is opened again, the menu still displays the gifts chosen previously, allowing the player's choices to persist across sessions."
         }
       },
       "s05": {
         "heading": "05 / DESIGN DEEP DIVE: CHAPTER 3'S DAILY SCHEDULE AND COMPANION SYSTEM",
-        "p1": "Organizing Three Days of Everyday Life into a Functional System\n\nChapter 3 reuses the same campus map throughout three days. Changes in dates, time stages, task states, and character behaviors gradually transform the player's everyday experience.",
+        "p1": "This chapter reuses the same campus map throughout three days. Changes in dates, time stages, task states, and character behaviors gradually transform the player's everyday experience.",
         "tableLabel": "Daily Schedule and Task Progression",
         "thStage": "Stage",
         "thDesign": "Design Focus",
@@ -155,7 +161,7 @@
         "d2": {
           "stage": "Day 2",
           "design": "Introduce additional campus activities, such as completing classroom duties and purchasing essential items, expanding the variety of daily tasks.",
-          "exp": "Develop proficiency in using the companion system and gain a deeper understanding of its mechanics through a wider range of everyday situations."
+          "exp": "The player gradually becomes familiar with the companion system, learning when to move together and when to wait."
         },
         "d3": {
           "stage": "Day 3",
@@ -167,13 +173,12 @@
         "trade": "Rather than building three separate environments for the three days, I chose to reuse the campus map and control tasks, character behaviors, and event triggers through schedule and state changes. This preserves spatial continuity while allowing development efforts to focus on character interactions and system integration."
       },
       "s06": {
-        "heading": "06 / VISUAL AND UI DESIGN",
-        "p1": "Using Visual Changes to Distinguish Reality from Subjective Perception\n\nThe game uses a top-down 2D pixel-art style. Campus environments emphasize clear spatial layouts and a familiar everyday atmosphere, while the labyrinth uses spatial distortions, lighting changes, and unusual objects to create an unstable perceptual experience.",
-        "p2": "The UI maintains a consistent visual language while distinguishing dialogue, interaction prompts, and task information. The main menu combines a bus stop setting with the display of selected gifts, allowing the player's final choices to remain part of the game interface."
+        "heading": "05 / SPRITE DESIGN",
+        "p1": "All of the game's art assets were hand-drawn by me. This section shows some of the art assets I created for the characters, monsters, and environments."
       },
       "s07": {
-        "heading": "07 / TECHNICAL IMPLEMENTATION",
-        "p1": "From Narrative Design to Functional Game Systems\n\nThe project was independently developed using Unity and C#. A complete game framework was built around level progression, task states, and character interactions.",
+        "heading": "06 / TECHNICAL IMPLEMENTATION",
+        "p1": "The project was independently developed using Unity and C#. A complete game framework was built around level progression, task states, and character interactions.",
         "b1": "Dialogue and Quest System: Organizes character dialogue and quest content through data-driven dialogue resources.",
         "b2": "Schedule and Event System: Manages time progression, task states, and event triggers in Chapter 3.",
         "b3": "Area Management: Switches camera views and activity boundaries between different areas within the same scene.",
@@ -181,15 +186,15 @@
         "b5": "Level Flow and Save System: Manages the four chapters, chapter replay, and persistent gift selections."
       },
       "s08": {
-        "heading": "08 / REFLECTION",
+        "heading": "07 / REFLECTION",
         "p1": "Understanding Does Not Mean Being Able to Change Everything.",
         "p2": "During development, I gradually realized that translating an emotional theme into an effective gameplay experience is much more challenging than simply writing a moving story.\n\nChapter 2 invites players into Power's subjective world of perception, while Chapter 3 turns understanding into everyday actions. Ultimately, I hope players remember not that Ashe saved Power, but that even when she could not change everything, she still chose to understand and accompany her friend through part of that journey.",
-        "p3": "In future iterations, I would like to further refine the puzzle pacing in Chapter 2, expand NPC side quests and task feedback in Chapter 3, and introduce accessibility options such as adjustable subtitle sizes and text speed."
+        "p3": "Moving forward, I plan to refine the puzzle pacing in Chapter 2, add more engaging levels and monsters, expand the NPC side quests and task feedback in Chapter 3, and introduce accessibility options such as subtitle size and text speed."
       },
       "s09": {
-        "heading": "09 / BEYOND THE GAME",
+        "heading": "08 / BEYOND THE GAME",
         "p1": "Unseen Witness is inspired by the real-life experiences I shared with my close friend, Power. The characters Ashe and Power are not entirely fictional creations, but are reimagined through the memories and moments we shared.",
-        "p2": "This page brings together glimpses of the real lives behind the game, including moments with Power and her dog, Lucky. These memories are where the story began, and what Unseen Witness hopes to preserve."
+        "p2": "This page brings together glimpses of the real lives behind the game, including moments with Power and her dog, Lucky. They are the original source of this story, and the real memories I hope to preserve through Unseen Witness."
       },
       "devLog": {
         "link": "View development log"
@@ -218,7 +223,7 @@
             "white": "[Image Placeholder: Character design sheet of the pale figures, alongside gameplay screenshots showing them blocking the player's path, leaving clues, or guiding Ashe through the labyrinth.]",
             "ghost": "[Image Placeholder: Character design or in-game screenshots of spectral faces appearing unexpectedly. Highlight their visual impact and how they interrupt the exploration experience.]",
             "env": {
-              "a": "Everyday objects from the classroom appear in the surreal bathroom, disrupting the familiar space and distorting its sense of order",
+              "a": "Everyday objects from the classroom appear in the surreal bathroom",
               "b": "Ashe encounters a strange, towering version of herself within the surreal space"
             },
             "backrooms": "Still from Backrooms. Furniture is strangely misplaced within the Backrooms environment, creating an unsettling sense of disorder in an otherwise familiar space",
@@ -234,16 +239,17 @@
             "menuOpening": "At the beginning of the game, the main menu shows Ashe and Power standing side by side at a bus stop",
             "menuA": "The bus stop scene after Ashe chooses Gift A",
             "menuB": "The bus stop scene after Ashe chooses Gift B",
-            "busCaption": "At the end of the game, Ashe returns to the bus stop alone, carrying the gifts she chose from Power's room. The scene then gradually transitions into the main menu, echoing the opening"
+            "busCaption": "At the end of the game, Ashe returns to the bus stop alone with the gifts, and the scene gradually transitions into the main menu."
           }
         },
         "s04": {
           "m1": {
             "main": "Overall view of the Chapter 2 labyrinth exploration space",
-            "a": "Ashe unleashes Will to strike down a Shadow Figure",
+            "a": "Ashe Unleashing Will",
             "b": "Ashe explores the environment, collects items, and solves puzzles to unlock a sealed door",
             "designInitial": "Initial concept: top-down maze map design",
             "designFinal": "Final direction: endless corridors and sequential doors",
+            "designMazeLayout": "Final Maze Layout",
             "designInitialSrc": "../assets/images/unseen-witness/s04-m1-design-01-en.png",
             "designFinalSrc": "../assets/images/unseen-witness/s04-m1-design-02-en.png"
           },
@@ -254,10 +260,10 @@
           "m3": {
             "gifts": "Gift selection in Power's room — players freely choose items to take with them",
             "reactOrange": "Power's reaction to the moldy orange selection",
-            "reactOctopus": "Power's reaction to the octopus plush selection",
+            "reactOctopus": "Power's reaction to the knight armor selection",
             "menuA": "Bus stop scene after Ashe takes Gift A",
             "menuB": "Bus stop scene after Ashe takes Gift B",
-            "menuMain": "After taking all chosen gifts, Ashe waits at the bus stop to leave. The scene gradually becomes the main menu, where the story closes. The menu is not only an entry point but a narrative space that carries the player's choices and shared memories"
+            "menuMain": "Bus stop scene after Ashe takes all gifts"
           }
         },
         "s05": {

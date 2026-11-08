@@ -79,6 +79,11 @@
   margin: var(--space-md) 0 var(--space-xs);
 }
 
+.case-sub__title--emphasis {
+  font-weight: 800;
+  color: var(--color-text);
+}
+
 .case-mechanic__title {
   font-size: 1.05rem;
   font-weight: 700;
@@ -190,6 +195,23 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+/* Tighter 3-up on case studies: same column width as .media-block, larger cells, less gutter */
+.project-detail--case-study .media-row--3 {
+  gap: 0.4rem;
+  column-gap: 0.4rem;
+  row-gap: 0.4rem;
+}
+
+/* Match game screenshot aspect (same as .media-block--game-native) so crops feel closer to full-width figures */
+.project-detail--case-study .media-row--3 .media-slot {
+  aspect-ratio: 1684 / 1056;
+}
+
+/* Browser default figure margins shrink grid columns vs full-width video */
+.project-detail--case-study .media-row > figure {
+  margin: 0;
+}
+
 .media-row--2 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -246,6 +268,42 @@
   aspect-ratio: 16 / 10;
 }
 
+/* s06 row 2: two sprite sheets in one frame, height matches neighbor cell */
+.media-slot--s06-duo {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-slot--s06-duo .media-slot__pane {
+  flex: 1 1 50%;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-slot--s06-duo .media-slot__pane + .media-slot__pane {
+  border-top: 1px solid var(--color-border);
+}
+
+.media-slot--s06-duo .media-slot__pane img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  cursor: zoom-in;
+}
+
+.media-slot--s06-duo-row {
+  flex-direction: row;
+}
+
+.media-slot--s06-duo-row .media-slot__pane + .media-slot__pane {
+  border-top: none;
+  border-left: 1px solid var(--color-border);
+}
+
 .media-slot--real-photo {
   aspect-ratio: 4 / 3;
   min-height: 10rem;
@@ -254,6 +312,11 @@
 .media-slot--real-photo.media-slot--filled img {
   object-fit: contain;
   background: #2a3238;
+}
+
+/* Hide selected image captions while keeping i18n + alt on images for accessibility */
+.case-study-figcaption--hidden {
+  display: none;
 }
 
 .media-block figcaption,
@@ -340,6 +403,10 @@
 }
 
 .case-study-video__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
   margin: 0 0 var(--space-lg);
   max-width: none;
   width: 100%;
@@ -361,6 +428,12 @@
   transition: background var(--transition), border-color var(--transition);
 }
 
+/* Taller icon on itch row needs extra vertical padding to match */
+.case-study-pill-link--youtube {
+  padding-top: 0.5625rem;
+  padding-bottom: 0.5625rem;
+}
+
 .case-study-pill-link--youtube::before {
   content: "";
   flex-shrink: 0;
@@ -369,6 +442,14 @@
   background: transparent
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 20'%3E%3Crect width='28' height='20' rx='5' fill='%23FF0000'/%3E%3Cpath fill='%23FFF' d='M11 5.2v9.6l8.2-4.8L11 5.2z'/%3E%3C/svg%3E")
     center / contain no-repeat;
+}
+
+.case-study-pill-link--itch::before {
+  content: "";
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1.35rem;
+  background: transparent url("../assets/images/icon-itchio.png") center / contain no-repeat;
 }
 
 .case-study-pill-link:hover {
@@ -406,6 +487,8 @@
   border-radius: var(--radius);
   background: var(--color-bg-elevated);
   overflow: hidden;
+  --monster-roster-thumb-w: 14rem;
+  --monster-roster-thumb-min-h: 13rem;
 }
 
 .monster-roster__item {
@@ -418,21 +501,52 @@
 
 .monster-roster__row {
   display: grid;
-  grid-template-columns: 5.5rem 1fr;
+  grid-template-columns: var(--monster-roster-thumb-w) 1fr;
   gap: var(--space-md);
-  align-items: center;
+  align-items: start;
   padding: var(--space-md);
 }
 
+.monster-roster__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
 .monster-roster__thumb {
-  width: 5.5rem;
-  height: 5.5rem;
-  aspect-ratio: 1;
+  width: var(--monster-roster-thumb-w);
+  min-height: var(--monster-roster-thumb-min-h);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: calc(var(--radius) - 2px);
 }
 
-.monster-roster__thumb img {
-  object-fit: cover;
+.monster-roster__thumb:not(.monster-roster__thumb--duo) img {
+  width: 100%;
+  height: 100%;
+  min-height: var(--monster-roster-thumb-min-h);
+  object-fit: contain;
+  object-position: center center;
+}
+
+.monster-roster__thumb--duo {
+  flex-direction: row;
+  gap: var(--space-xs);
+  padding: var(--space-xs);
+}
+
+.monster-roster__thumb--duo img {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  height: 100%;
+  min-height: var(--monster-roster-thumb-min-h);
+  max-height: none;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .monster-roster__name {
@@ -451,8 +565,7 @@
 }
 
 .monster-roster__body {
-  --monster-roster-inset: calc(var(--space-md) + 5.5rem + var(--space-md));
-  padding: 0 var(--monster-roster-inset) var(--space-md);
+  padding: 0;
   max-width: none;
 }
 

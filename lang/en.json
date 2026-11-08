@@ -7,34 +7,53 @@
     "tagline": "Game Design · Concept Art · 3D Environments"
   },
   "home": {
-    "welcomeTitle": "Build worlds with vision; tell stories through interaction.",
+    "welcomeTitle": "From Visuals to Games",
+    "heroLine1": "From Visuals to",
+    "heroLine2": "Games",
+    "heroLine3": "",
     "welcomeNick": "",
-    "intro1": "I'm Ashe (Ruohan) Wang, a creator focused on game visual design and interactive storytelling.",
-    "intro2": "From concept design and character development to 3D environment building, I explore how visuals, atmosphere, and game mechanics shape the player experience—worlds worth not only watching, but stepping into."
+    "intro1": "I'm Ashe Wang, a game visual designer and interactive storyteller.",
+    "intro2": "I start with characters and environments, then bring ideas to life through gameplay and narrative.",
+    "intro3": "",
+    "connectTitle": "Get in touch",
+    "connectIntro": "Collaborations, feedback, and opportunities—reach me here.",
+    "connectEmailLabel": "Email",
+    "connectArtStationLabel": "ArtStation",
+    "connectLinkedInLabel": "LinkedIn",
+    "connectInstagramLabel": "Instagram",
+    "connectYouTubeLabel": "YouTube"
   },
   "nav": {
     "games": "Games",
     "art": "Art",
+    "other": "Other",
     "about": "About"
   },
   "hub": {
     "scrollHint": "Scroll down to explore",
+    "sectionTitle": "EXPLORE",
     "panels": {
       "games": {
-        "label": "01 — Games",
-        "title": "Game Works",
+        "label": "Games",
+        "title": "Game\nWorks",
         "blurb": "Playable experiences, narrative & systems",
         "cta": "Enter games"
       },
       "art": {
-        "label": "02 — Art",
-        "title": "Art Projects",
+        "label": "Art",
+        "title": "Art\nProjects",
         "blurb": "Concept art & UE5 environments",
         "cta": "Enter art"
       },
+      "other": {
+        "label": "Other",
+        "title": "Other\nWorks",
+        "blurb": "Smaller experiments & side projects",
+        "cta": "Browse more"
+      },
       "about": {
-        "label": "03 — About",
-        "title": "About Me",
+        "label": "About",
+        "title": "About\nMe",
         "blurb": "Background, tools & contact",
         "cta": "Learn more"
       }
@@ -47,6 +66,20 @@
   "games": {
     "pageTitle": "Game Works",
     "intro": "Exploring the intersection of narrative, interaction, and game mechanics to build worlds, shape characters, and evoke emotions through play."
+  },
+  "other": {
+    "pageTitle": "Other Works",
+    "intro": "A single list of smaller projects and experiments—prototypes, jams, and one-offs that do not need their own section on the hub.",
+    "emptyHint": "More small projects will be listed here soon.",
+    "packaging": {
+      "title": "Packaging Design",
+      "body": "A four-member team project for spicy rabbit head gift packaging. I was responsible for research, concept development, and part of the 3D modeling and rendering.",
+      "imageAlt": "Spicy rabbit head gift packaging design render"
+    },
+    "typeface": {
+      "title": "Typeface Design",
+      "body": "An original typeface inspired by water droplets, incorporating their soft forms into the letterforms to create a calm and tranquil visual style."
+    }
   },
   "art": {
     "pageTitle": "Art Projects",

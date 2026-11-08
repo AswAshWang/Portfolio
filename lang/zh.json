@@ -7,33 +7,52 @@
     "tagline": "游戏设计 · 概念美术 · 三维场景"
   },
   "home": {
-    "welcomeTitle": "用视觉构建世界，用交互讲述故事。",
+    "welcomeTitle": "从画面到游戏",
+    "heroLine1": "从画面到游戏",
+    "heroLine2": "",
+    "heroLine3": "",
     "welcomeNick": "",
-    "intro1": "我是王若寒，一名专注于游戏视觉设计与互动叙事的创作者。",
-    "intro2": "从概念设计、角色塑造到 3D 场景构建，我希望探索视觉、氛围与游戏机制如何共同塑造玩家的体验，让每一个世界不仅值得观看，更值得亲自走进。"
+    "intro1": "我是王若寒，一名游戏视觉设计与互动叙事创作者。",
+    "intro2": "我从角色与场景出发，也做玩法与故事，把一个想法一步步变成可以被看见、探索和玩的游戏。",
+    "intro3": "",
+    "connectTitle": "保持联系",
+    "connectIntro": "合作、反馈与机会，欢迎通过以下方式联系我。",
+    "connectEmailLabel": "邮箱",
+    "connectArtStationLabel": "ArtStation",
+    "connectLinkedInLabel": "领英",
+    "connectInstagramLabel": "Instagram",
+    "connectYouTubeLabel": "YouTube"
   },
   "nav": {
     "games": "游戏作品",
     "art": "美术项目",
+    "other": "其他作品",
     "about": "关于"
   },
   "hub": {
     "scrollHint": "向下滑动浏览分区",
+    "sectionTitle": "探索",
     "panels": {
       "games": {
-        "label": "01 — Games",
+        "label": "Games",
         "title": "游戏作品",
         "blurb": "可玩体验、叙事与系统设计",
         "cta": "进入游戏分区"
       },
       "art": {
-        "label": "02 — Art",
+        "label": "Art",
         "title": "美术项目",
         "blurb": "概念设定与 UE5 环境场景",
         "cta": "进入美术分区"
       },
+      "other": {
+        "label": "Other",
+        "title": "其他作品",
+        "blurb": "小型实验与副线项目",
+        "cta": "查看更多"
+      },
       "about": {
-        "label": "03 — About",
+        "label": "About",
         "title": "个人介绍",
         "blurb": "背景、工具与联系方式",
         "cta": "了解更多"
@@ -47,6 +66,20 @@
   "games": {
     "pageTitle": "游戏作品",
     "intro": "探索叙事、交互与游戏机制的结合，通过可玩的体验构建世界、塑造角色，并传递情感。"
+  },
+  "other": {
+    "pageTitle": "其他作品",
+    "intro": "这里集中展示体量较小、不适合单独占主页分区的项目与实验——不分二级分区，只用卡片列表呈现。",
+    "emptyHint": "更多小项目将陆续添加到这里。",
+    "packaging": {
+      "title": "包装设计",
+      "body": "四人团队合作的麻辣兔头礼盒包装设计，我负责前期调研、概念设计，以及部分 3D 建模与效果图制作。",
+      "imageAlt": "麻辣兔头礼盒包装设计效果图"
+    },
+    "typeface": {
+      "title": "字体设计",
+      "body": "以水滴为灵感设计的一套原创字体，将水滴的柔和形态融入字形设计，营造平静、宁静的视觉感受。"
+    }
   },
   "art": {
     "pageTitle": "美术项目",

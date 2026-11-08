@@ -254,6 +254,96 @@
   color: var(--color-accent-games);
 }
 
+.page-main--other .other-works {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  margin-top: var(--space-md);
+}
+
+.page-main--other .other-work__title {
+  margin: 0 0 var(--space-sm);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-text);
+}
+
+.page-main--other .other-work__body {
+  margin: 0 0 var(--space-md);
+  max-width: 42rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+}
+
+.page-main--other .other-work__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 52rem;
+}
+
+.page-main--other .other-work__media-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.71fr) minmax(0, 1fr);
+  gap: var(--space-md);
+  width: 100%;
+  max-width: 52rem;
+  align-items: start;
+}
+
+@media (max-width: 36rem) {
+  .page-main--other .other-work__media-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.page-main--other .other-work__media-row .other-work__media {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+}
+
+.page-main--other .other-work__media-row .other-work__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.page-main--other .other-work__media {
+  margin: 0;
+  max-width: 52rem;
+}
+
+.page-main--other .other-work__media img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  cursor: zoom-in;
+}
+
+.page-main--other .project-card__link {
+  color: var(--color-accent-other);
+}
+
+.page-empty {
+  margin: 0;
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.page-empty[hidden] {
+  display: none;
+}
+
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -504,6 +594,31 @@
   height: auto;
   display: block;
   cursor: zoom-in;
+}
+
+.art-board-stack .art-board-embed {
+  width: 90vw;
+  max-width: 90vw;
+  margin: 0;
+}
+
+.art-board-stack .art-board-embed__inner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  background: #000;
+}
+
+.art-board-stack .art-board-embed__inner iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
 
 .art-board-label {

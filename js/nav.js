@@ -9,13 +9,19 @@
       if (href.includes("about.html") && path.includes("about.html")) current = true;
       else if (href.includes("/games") && path.includes("/games")) current = true;
       else if (href.includes("/art") && path.includes("/art")) current = true;
+      else if (href.includes("/other") && path.includes("/other")) current = true;
       else if (
         (href === "index.html" || href === "./" || href === "../index.html" || href === "../../index.html") &&
         (path.endsWith("/personal_web") ||
           path.endsWith("/personal_web/") ||
-          path.endsWith("index.html") && !path.includes("/games") && !path.includes("/art") && !path.includes("about"))
+          path.endsWith("index.html") && !path.includes("/games") && !path.includes("/art") && !path.includes("/other") && !path.includes("about"))
       ) {
-        current = path.includes("index.html") && !path.includes("/games") && !path.includes("/art") && !path.includes("about");
+        current =
+          path.includes("index.html") &&
+          !path.includes("/games") &&
+          !path.includes("/art") &&
+          !path.includes("/other") &&
+          !path.includes("about");
       }
 
       link.toggleAttribute("aria-current", current ? "page" : false);
